@@ -10,23 +10,17 @@ const Card = ({ data }) => {
           data.count > 0 ? "border-4 border-red rounded-xl sm:border-4" : ""
         }`}
       >
-        {/* <div className="rounded-md overflow-hidden">
+        <div className="rounded-md overflow-hidden">
           <picture className="rounded-md">
             <source
               srcSet={data.image.mobile}
-              media="(max-width: 640px)" // sm: Tailwind's small breakpoint
+              media="(max-width: 640px)"
               className="rounded-md"
             />
-            <source
-              srcSet={data.image.desktop}
-              media="(min-width: 641px)" // md: Tailwind's medium breakpoint starts here
-            />
-            <img
-              src={data.image.mobile} // Fallback image for unsupported browsers
-              alt="add-to-cart"
-            />
+            <source srcSet={data.image.desktop} media="(min-width: 641px)" />
+            <img src={data.image.mobile} alt="add-to-cart" />
           </picture>
-        </div> */}
+        </div>
         {!data.count || data.count === 0 ? (
           <div
             className="absolute bottom-[-5%] left-[50%] translate-x-[-50%] border-2 w-[40%] justify-center py-1 rounded-2xl flex gap-4 border-red bg-white"
