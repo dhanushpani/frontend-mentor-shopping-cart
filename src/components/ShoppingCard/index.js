@@ -76,7 +76,7 @@ const ShoppingCard = ({ setOpen }) => {
           ))}
         </>
       )}
-      {data[0].tc && data[0].tc > 1 && (
+      {data[0].tc && data[0].tc > 0 && (
         <>
           <div className="my-4 border-t-[0.5px] border-rose-400 py-4">
             <div className="flex justify-between">
