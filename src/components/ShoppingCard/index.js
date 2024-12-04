@@ -32,6 +32,7 @@ const ShoppingCard = ({ setOpen }) => {
           <img
             src="/assets/images/illustration-empty-cart.svg"
             className="w-[50%] py-4 mt-4"
+            alt='emptycart'
           />
           <p className="text-md text-red font-medium">
             Your added items will appear here
