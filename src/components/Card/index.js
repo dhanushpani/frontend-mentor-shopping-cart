@@ -23,11 +23,11 @@ const Card = ({ data }) => {
         </div>
         {!data.count || data.count === 0 ? (
           <div
-            className="absolute bottom-[-5%] left-[50%] translate-x-[-50%] border-2 w-[40%] justify-center py-1 rounded-2xl flex gap-4 border-red bg-white"
+            className="absolute bottom-[-5%] left-[50%] translate-x-[-50%] border-2 w-[50%] justify-center py-1 rounded-2xl flex gap-4 border-rose-400 bg-white"
             onClick={() => incrementCount(data.name)}
           >
             <img src="assets/images/icon-add-to-cart.svg" alt="add-to-cart" />
-            <p className="text-sm text-rose-900 font-semibold">Add</p>
+            <p className="text-xs text-rose-900 font-semibold">Add to cart</p>
           </div>
         ) : (
           <>

@@ -27,8 +27,8 @@ function App() {
       <div className="font-custom py-[2%] px-[5%] bg-rose-50 min-h-screen relative">
         <div className="md:flex w-[100%]">
           <div className="sm:[100%] md:w-[70%]">
-            <p className="font-bold text-3xl">title</p>
-            <div className="md:grid grid-rows-3 grid-flow-col gap-4">
+            <p className="font-bold text-3xl pb-6 ">Desserts</p>
+            <div className="md:grid grid-rows-3 grid-flow-col gap-4 px-6">
               {data.map((item, index) => (
                 <Card data={item} i />
               ))}
