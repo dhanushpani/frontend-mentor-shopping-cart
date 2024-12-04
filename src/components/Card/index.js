@@ -51,8 +51,8 @@ const Card = ({ data }) => {
       </div>
       <div className="py-8">
         <div className="font-thin text-xs">{data.category}</div>
-        <p className="font-bold text-md">{data.name}</p>
-        <p className="font-semibold">{data.price}</p>
+        <p className="font-semibold text-md">{data.name}</p>
+        <p className="font-semibold text-red">${data.price}</p>
       </div>
     </div>
   );
